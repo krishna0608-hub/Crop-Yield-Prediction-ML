@@ -24,7 +24,7 @@ st.write(
 # 1. LOAD DATASET
 # --------------------------------------------------
 
-DATA_FILE = "/content/crop_yield.csv"
+DATA_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "crop_yield.csv")
 HISTORY_FILE = "/content/prediction_history.csv"
 
 if not os.path.exists(DATA_FILE):
